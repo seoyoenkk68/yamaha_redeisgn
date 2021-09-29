@@ -11,7 +11,7 @@
   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 
   <!-- swiper 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.2/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.7/swiper-bundle.min.js"></script>
 
   <!-- GSAP 불러오기 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
@@ -76,10 +76,38 @@
   <section class="section-2 prd-list">
     <div class="con">
       <div class="title-txt">
-        <h1>제품정보</h1>
+        <h1>제품 정보</h1><a>더 보기<img src="img/prdMore.png" alt=""></a>
+        <span>우리의 마음을 감동시키는 WAVE</span>
       </div>
+      <!-- 슬라이더 -->
+      <div class="swiper bg-red-100">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="img-box"><img src="" alt=""></div>
+            <div class="prodName-box">
+              <span>1</span>
+              <span>2</span>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="sub-prod-box">
 
-    </div>
+      </div>
+  </section>
+
+  <section class="section-3 rcd-prod">
+    <div class="con"></div>
   </section>
 
 </body>
