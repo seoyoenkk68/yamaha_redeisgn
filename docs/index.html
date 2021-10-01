@@ -11,7 +11,8 @@
   <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 
   <!-- swiper 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 
   <!-- GSAP 불러오기 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
@@ -73,42 +74,439 @@
     </div>
   </section>
 
-  <section class="section-2 prd-list">
+  <section class="section-2 prod-list">
     <div class="con">
       <div class="title-txt">
-        <h1>제품 정보</h1><a>더 보기<img src="img/prdMore.png" alt=""></a>
+        <h1>제품 정보</h1><a href="#">더 보기<img src="img/prdMore.png" alt=""></a>
         <span>우리의 마음을 감동시키는 WAVE</span>
       </div>
       <!-- 슬라이더 -->
-      <div class="swiper bg-red-100">
+      <!-- Slider main container -->
+      <div class="swiper prod-slide">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="img-box"><img src="" alt=""></div>
-            <div class="prodName-box">
-              <span>1</span>
-              <span>2</span>
+            <div class="img-box">
+              <img class="marginTop" src="https://i.postimg.cc/VsR9V3GJ/prod-piano.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>탁월한 음색과 숨막히는 아름다움</h1>
+              <span>어쿠스틱 피아노</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box txtRight">
+              <img src="https://i.postimg.cc/zBBRtZ5n/Group-2.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>사운드를 제어하고 표현을 이끌어 내는 새로운 방식</h1>
+              <span>키보드&신디사이저</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box">
+              <img src="https://i.postimg.cc/bJ34PnK7/Group-3.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>전통적인 장인정신과 최첨단 기술의 완벽한 조화</h1>
+              <span>어쿠스틱&일렉트릭 기타</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box">
+              <img src="https://i.postimg.cc/pyNhLmjZ/Group-4.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>혁신적인 아이디어, 최상의 자재, 높은 기술력</h1>
+              <span>드럼&전자드럼 세트</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box txtRight">
+              <img src="https://i.postimg.cc/yx33KmDx/Group-5.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>놀라운 현장감을 제공하는 풍부하고 깊은 음색</h1>
+              <span>금관&목관 악기</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box">
+              <img src="https://i.postimg.cc/2j10ygvb/Group-6.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>최상의 소리와 최고의 연주 퍼포먼스를 제공</h1>
+              <span>현악기</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box">
+              <img src="https://i.postimg.cc/66FYvzLH/Group-7.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>전문 연주자들의 까다로운 요구를 만족시키는 악기</h1>
+              <span>타악기</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-box">
+              <img src="https://i.postimg.cc/zXWpSWxq/Group-8.png" alt="">
+            </div>
+            <a href="#" class="txt-box">
+              <h1>세계 최고 분야에서 뛰어난 실적을 바탕으로 제작</h1>
+              <span>마칭악기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="btn btn-prev">
+        <img src="https://i.postimg.cc/GmqkmNT4/prev.png" alt="">
+      </div>
+      <div class="btn btn-next">
+        <img src="https://i.postimg.cc/GmcFrrt0/next.png" alt="">
+      </div>
+
+      <div class="sub-prod-list flex justify-between">
+        <a href="#" class="box box-1 flex items-center justify-between">오디오 및 비주얼 <img
+            src="https://i.postimg.cc/prXDzhcJ/prod-vector.png" alt=""></a>
+        <a href="#" class="box box-2 flex items-center justify-between">프로 오디오 <img
+            src="https://i.postimg.cc/prXDzhcJ/prod-vector.png" alt=""></a>
+        <a href="#" class="box box-3 flex items-center justify-between">통합 커뮤니케이션 <img
+            src="https://i.postimg.cc/prXDzhcJ/prod-vector.png" alt=""></a>
+        <a href="#" class="box box-4 flex items-center justify-between">애플리케이션 <img
+            src="https://i.postimg.cc/prXDzhcJ/prod-vector.png" alt=""></a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section-3 rec-prod-list">
+    <div class="con">
+
+      <div class="title-txt">
+        <h1>추천 상품</h1><a>더 보기<img src="img/prdMore.png" alt=""></a>
+        <span>우리의 마음을 감동시키는 WAVE</span>
+      </div>
+
+      <div class="box-wrap flex justify-between">
+        <div class="list list_1">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/dQ59zdWR/rec-img-3.png" alt="">
+          </div>
+          <div class="txt-box">
+            <span class="s1">Avant Grand</span><span class="s2">하이브리드 피아노</span>
+            <h1>NU1X</h1>
+            <div>기존 방식을 뛰어넘어 어쿠스틱과 디지털의 경계를 허문 세련된 소형 AvantGrand에서 전통적인 감성이 현대적인 실용성과 만납니다</div>
+          </div>
+        </div>
+
+        <div class="list list_2">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/vBzv86Gs/rec-img-1.png" alt="">
+          </div>
+          <div class="txt-box">
+            <span class="s1">MONTAGE</span><span class="s2">신디사이저</span>
+            <h1>MONTAGE8</h1>
+            <div>Montage는 섬세한 다이나믹 컨트롤, 압도적인 사운드 생성과 능률적인 작업 흐름으로 차세대 신디사이저로 자리매김할 것입니다.</div>
+          </div>
+        </div>
+
+        <div class="list list_3">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/7htM08Ct/rec-img-2.png" alt="">
+          </div>
+          <div class="txt-box">
+            <span class="s1">Venova™</span><span class="s2">캐주얼 관악기</span>
+            <h1>YVS-120</h1>
+            <div>리코더의 단순함과 색소폰의 사운드가 조화를 이루는 재미있는 새로운 관악기입니다. 초보자라도 누구나 쉽게 부드러운 음향을 낼 수 있습니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="https://i.postimg.cc/L8GJK0SK/bg8.png" alt="" class="rec_bg">
+  </section>
+
+  <section class="section-4 search">
+    <div class="con">
+      <div class="title-txt">
+        <h1>제품 검색</h1>
+        <div>필터 정렬을 통해 조건에 맞는 제품을 검색해보세요</div>
+      </div>
+
+      <div class="search-box flex items-center">
+        <div class="sh1">
+          <select name="prod">
+            <option value="">제품</option>
+          </select>
+        </div>
+        <div class="sh2">
+          <select name="Kinds">
+            <option value="">종류</option>
+          </select>
+        </div>
+        <div class="sh3">
+          <select name="price">
+            <option value="">가격대</option>
+          </select>
+        </div>
+        <div class="input flex-grow bg-red-100">
+          <input type="text">
+        </div>
+        <button>
+          <img src="https://i.postimg.cc/TPJ6GGHD/search-vector2.png" alt="">
+        </button>
+      </div>
+    </div>
+    <img src="https://i.postimg.cc/PJ4MSvCx/search-bg.png" alt="" class="search_bg">
+  </section>
+
+
+  <section class="section-5 av-prod-list">
+    <div class="con">
+
+      <div class="title-txt">
+        <h1>오디오 및 비주얼</h1><a>더 보기<img src="img/prdMore.png" alt=""></a>
+        <div>야마하에서 제공하는 사운드 주변용품을 추천합니다</div>
+      </div>
+
+      <div class="av-list-box flex justify-between flex-shrink-0">
+        <div class="list list_1">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/jq3SgmgX/Rectangle-56.png
+" alt="">
+          </div>
+          <div class="txt-box">
+            <h1>TW-E38</h1>
+            <div class="new"></div>
+            <span>Listening Care 및 6가지 컬러의 완전 무선 이어폰</span>
+          </div>
+        </div>
+        <div class="list list_2">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/0jj250QD/Rectangle-56-1.png" alt="">
+          </div>
+          <div class="txt-box">
+            <h1>YH-L700A</h1>
+            <div class="new"></div>
+            <span>3D Sound Field, Advanced ANC, Listening Optimizer 및 Listening Care 기능이 있는 오버이어 헤드폰</span>
+          </div>
+        </div>
+        <div class="list list_3">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/tC1CLk8H/Rectangle-56-2.png" alt="">
+          </div>
+          <div class="txt-box">
+            <h1>YH-E700A</h1>
+            <span>Advanced ANC, Listening Optimizer 및 Listening Care 기능이 있는 오버이어 헤드폰</span>
+          </div>
+        </div>
+        <div class="list list_4">
+          <div class="img-box">
+            <img src="https://i.postimg.cc/C52MRnBt/Rectangle-56-3.png" alt="">
+          </div>
+          <div class="txt-box">
+            <h1>YH-E500A</h1>
+            <span>ANC, Ambient Sound 및 Listening Care 기능이 있는 온이어 헤드폰</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section-6 notice">
+    <div class="con">
+
+      <div class="wrap flex flex-shrink-0">
+        <div class="news-wrap">
+          <div class="title-txt">
+            <h1>야마하 <span>소식</span></h1><a>더 보기<img src="img/prdMore.png" alt=""></a>
+          </div>
+          <div class="news-list flex flex-col justify-between">
+            <div class="list-wrap list-rap-1 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">쇼팽 국제 피아노 콩쿠르 참자가 초대 콘서트</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-09-25</span>
+            </div>
+            <hr>
+            <div class="list-wrap list-rap-2 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">기타리스트 양재인 교본 출판 기념 온라인 세미나2</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-09-18</span>
+            </div>
+            <hr>
+            <div class="list-wrap list-rap-3 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">입문 연주자를 위한 첫번째 플룻 YFL-222</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-09-15</span>
+            </div>
+            <hr>
+            <div class="list-wrap list-rap-4 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">2021년 하반기 야마하 신디사이저 초보탈출 MONTAGE 강좌</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-08-31</span>
+            </div>
+            <hr>
+            <div class="list-wrap list-rap-5 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">여름맞이 야마하 Summer Wind 이벤트</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-08-31</span>
+            </div>
+            <hr>
+            <div class="list-wrap list-rap-6 flex justify-between items-center">
+              <span class="s1"></span>
+              <span class="s2">입문자를 위한 특별한 어쿠스틱 바이올린 V3S</span>
+              <div class="flex-grow"></div>
+              <span class="s3">2021-08-29</span>
             </div>
           </div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-      <div class="sub-prod-box">
 
+        <div class="bn-wrap">
+          <img src="https://i.postimg.cc/T2zLRhmS/Group-10.png" alt="" class="bn">
+        </div>
       </div>
+
+    </div>
   </section>
 
-  <section class="section-3 rcd-prod">
-    <div class="con"></div>
+  <section class="section-7 service">
+    <div class="con">
+
+      <div class="service-wrap">
+        <h1>야마하 <span>서비스</span></h1>
+        <div class="list-wrap flex justify-between">
+          <a href="#"><img src="https://i.postimg.cc/QdD1gS8h/m1.png" alt=""></a>
+          <a href="#"><img src="https://i.postimg.cc/RZmVpDJp/Group-12.png" alt=""></a>
+          <a href="#"><img src="https://i.postimg.cc/pdXVR5ZD/Group-13.png" alt=""></a>
+          <a href="#"><img src="https://i.postimg.cc/m2CgwskF/Group-14.png" alt=""></a>
+          <a href="#"><img src="https://i.postimg.cc/J79hZnrL/Group-15.png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+
+    <img src="https://i.postimg.cc/tJDVCG6T/image.png" alt="" class="bg">
   </section>
+
+  <footer>
+    <div class="wrap flex justify-between flex-shrink-0">
+  
+      <div class="list list_1">
+        <h1>제품정보</h1>
+        <div class="content-wrap flex">
+          <ul class="wrap_1 cwrap">
+            <li>피아노</li>
+            <li>키보드</li>
+            <li>기타,베이스 및 앰프</li>
+            <li>드럼</li>
+            <li>금관악기/목관악기</li>
+            <li>현악기</li>
+            <li>타악기</li>
+          </ul>
+          <ul class="wrap_2 cwrap">
+            <li>마칭악기</li>
+            <li>신디사이저&뮤직프로덕션 툴</li>
+            <li>오디오 및 비주얼</li>
+            <li>프로오디오</li>
+            <li>통합 커뮤니케이션</li>
+            <li>애플리케이션</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="list list_2">
+        <h1>뉴스 이벤트</h1>
+        <div class="content-wrap">
+          <ul class="cwrap">
+            <li>최신뉴스&이벤트</li>
+          </ul>
+        </div>
+        <h1 style="margin-top:30px;">아티스트</h1>
+        <div class="content-wrap">
+          <ul class="cwrap">
+            <li>최신 아티스트</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="list list_3">
+        <h1>고객서비스</h1>
+        <div class="content-wrap flex">
+          <ul class="wrap_1 cwrap">
+            <li>문의처</li>
+            <li>계정 등록 안내</li>
+            <li>서비스 센터</li>
+            <li>제품 보중 안내</li>
+          </ul>
+          <ul class="wrap_2 cwrap">
+            <li>브로셔&카달로그</li>
+            <li>제품 메뉴얼</li>
+            <li>펌웨어/소프트웨어업데이트</li>
+            <li>문서 및 데이터</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="list list_4">
+        <h1>야마하 대리점&지원센터</h1>
+        <div class="content-wrap flex">
+          <ul class="wrap_1 cwrap">
+            <li>대리점 찾기</li>
+            <li style="font-family: Roboto;">Yamaha Music Communication Center</li>
+            <li style="font-family: Roboto;">Y-DACC</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="list list_5">
+        <h1>야마하 소개</h1>
+        <div class="content-wrap flex">
+          <ul class="wrap_1 cwrap">
+            <li>야마하뮤직코리아(주)</li>
+            <li>회사소개</li>
+            <li>기업영상</li>
+            <li>브랜드 약속</li>
+            <li>기업이념</li>
+          </ul>
+          <ul class="wrap_2 cwrap">
+            <li>주주들과의 약속</li>
+            <li>역사</li>
+            <li>CSR(사회공헌활동)</li>
+            <li>오시는 길</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="copy flex justify-center">
+      <div class="c1 c"></div>
+      <div class="c2 c flex items-end justify-center">
+        Copyright 2021. YamahaMusicKorea inc. all right reserved.
+      </div>
+      <div class="c3 c">
+        <div><span>글로벌</span><span>|</span><span>대한민국</span></div>
+        <div class="wwrap">
+          <span>문의처</span>
+          <span>이용약관</span>
+          <span>개인 정보 취급 방침</span>
+          <span>소셜미디어(Blogs)</span>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
 
 </body>
 

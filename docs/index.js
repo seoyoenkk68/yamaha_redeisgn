@@ -1,19 +1,12 @@
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+const swiper = new Swiper('.prod-slide', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.btn-next',
+    prevEl: '.btn-prev',
   },
 
-  //slidesPerView: 4,
-  //spaceBetween: 30,
+  slidesPerView: 4,
+  spaceBetween: 30,
 });
