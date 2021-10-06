@@ -594,10 +594,6 @@ cursor: pointer;
   letter-spacing: -0.07em;
 }
 
-.section-6>.con>.wrap>.news-wrap>.news-list>hr{
-  /*   border: 1px dashed rgba(0, 0, 0, 0.35); */
-}
-
 .section-6>.con>.wrap>.bn-wrap {
   width: calc(1180px / 2);
   box-sizing: border-box;
