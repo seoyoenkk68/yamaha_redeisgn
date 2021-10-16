@@ -32,7 +32,9 @@ header>.menu {
 }
 
 header>.menu>li {
-  padding: 0 23px;
+  padding: 10px 23px;
+  position: relative;
+  /* border: 1px solid red; */
 }
 
 header>.sub-menu>a {
@@ -43,7 +45,50 @@ header>.sub-menu>a:nth-of-type(1) {
   margin-right: 30px;
 }
 
+header ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  color: #000;
+  box-shadow: 0,0,0,rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  width: 250px;
+  transition: opacity .3s, visibility .3s;
+}
 
+header>ul>li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+header ul ul>li {
+  padding: 10px 30px;
+}
+
+header ul ul>li:hover {
+  color: #613E71;
+  font-weight: bold;
+}
+
+header>ul.menu>li::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 1px;
+background-color:rgba(255,255,255,0.5);
+bottom: 0px;
+left: 0;
+transform: translateY(10px);
+opacity: 0;
+transition: transform .3s, opacity .3s, width .3s;
+}
+
+header>ul.menu>li:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .section-1 {
   overflow-x: hidden;
@@ -100,7 +145,7 @@ header>.sub-menu>a:nth-of-type(1) {
 }
 
 .txtRight {
-  text-align:right;
+  text-align: right;
 }
 
 .section-2 {
@@ -144,7 +189,7 @@ header>.sub-menu>a:nth-of-type(1) {
   height: 430px;
   overflow: hidden;
   margin: 0 auto;
-  margin-top:34px;
+  margin-top: 34px;
 }
 
 .prod-slide .swiper-slide {
@@ -173,7 +218,7 @@ header>.sub-menu>a:nth-of-type(1) {
 .prod-slide>.swiper-wrapper>.swiper-slide>.txt-box {
   display: block;
   position: relative;
-  z-index:1;
+  z-index: 1;
   width: 98%;
   height: 90px;
   background-color: #fff;
@@ -244,8 +289,8 @@ header>.sub-menu>a:nth-of-type(1) {
   margin-top: 190px;
 }
 
-.section-3 > img.rec_bg {
-  width:100%;
+.section-3>img.rec_bg {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -306,15 +351,15 @@ header>.sub-menu>a:nth-of-type(1) {
 .section-3>.con>.box-wrap>.list>.img-box>img {
   width: 100%;
   display: inline-block;
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .section-3>.con>.box-wrap>.list>.txt-box {
   position: relative;
   z-index: 1;
-  width:375px;
-  height:159px;
-  background-color:#fff;
+  width: 375px;
+  height: 159px;
+  background-color: #fff;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 25px;
@@ -370,8 +415,8 @@ header>.sub-menu>a:nth-of-type(1) {
   padding-top: 150px;
 }
 
-.section-4 > img.search_bg {
-  width:100%;
+.section-4>img.search_bg {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -421,7 +466,7 @@ header>.sub-menu>a:nth-of-type(1) {
 
 .section-4>.con>.search-box input {
   border: none;
-  width:100%;
+  width: 100%;
   border-left: 0.5px solid #363636;
 }
 
@@ -482,7 +527,7 @@ header>.sub-menu>a:nth-of-type(1) {
 }
 
 .section-5>.con>.av-list-box>.list>.txt-box>h1 {
-  display:inline-block;
+  display: inline-block;
   font-weight: bold;
   font-size: 20px;
   line-height: 122.4%;
@@ -512,7 +557,7 @@ header>.sub-menu>a:nth-of-type(1) {
 }
 
 .section-5>.con>.av-list-box>.list>.txt-box>span {
-  display:block;
+  display: block;
   font-family: Noto Sans KR;
   font-style: normal;
   font-weight: 100;
@@ -569,10 +614,10 @@ header>.sub-menu>a:nth-of-type(1) {
   margin-top: 27px;
   box-sizing: border-box;
   padding: 0 30px;
-cursor: pointer;
+  cursor: pointer;
 }
 
-.section-6>.con>.wrap>.news-wrap>.news-list>.list-wrap>.s1{
+.section-6>.con>.wrap>.news-wrap>.news-list>.list-wrap>.s1 {
   margin-right: 10px;
   width: 4px;
   height: 4px;
@@ -580,7 +625,7 @@ cursor: pointer;
   background-color: #000;
 }
 
-.section-6>.con>.wrap>.news-wrap>.news-list>.list-wrap>.s2{
+.section-6>.con>.wrap>.news-wrap>.news-list>.list-wrap>.s2 {
   font-weight: 300;
   font-size: 15px;
   line-height: 122.4%;
@@ -616,7 +661,7 @@ cursor: pointer;
 
 .section-7>.con>.service-wrap {
   text-align: center;
-  padding-top: 70px;          
+  padding-top: 70px;
 }
 
 .section-7>.con>.service-wrap>h1 {
@@ -660,7 +705,7 @@ footer {
   margin-top: 85px;
 }
 
-footer>.wrap{
+footer>.wrap {
   width: 1512px;
   margin: 0 auto;
   padding-top: 50px;
